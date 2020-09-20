@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Waseem
-# Discription: This cript for creating files backup
+# Discription: This script for creating files backup
 time=$(date '+%Y:%m:%d::%H:%M:%S')
 fileid=$(date '+%d%m%Y_%H%M%S')
 logfilename=BKP_$(date '+%Y%m%d').log
