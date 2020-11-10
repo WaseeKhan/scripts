@@ -2,7 +2,7 @@
 # Author: Waseem
 # Dicription: This script will delete old files
 time=$(date '+%Y-%m-%d:%H:%M:%S')
-fileid=$(date '+%Y%m%d')
+fileid=$(date '+%m%Y')
 logfilename=HOUSEKEEPING_$fileid.log
 
 echo '------Task Started!------------' >>/apps/doapp/standalone/logs/housekeeping/$logfilename 2>&1
