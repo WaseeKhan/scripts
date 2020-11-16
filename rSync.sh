@@ -6,7 +6,7 @@
 cur_time=$(date '+%Y-%m-%d')
 logfilename=rsync_$cur_time.log
 
-rsync -rvzhu -p -o -g --delete --log-file=/apps/doapp/standalone/logs/rsync/$logfilename /apps/doapp/standalone/scripts/ lucifer@192.168.0.103:/apps/doapp/standalone/scripts/
+rsync -rvzhu -p -o -g --delete --exclude '/apps/doapp/standalone/logs/' --log-file=/apps/doapp/standalone/logs/rsync/$logfilename /apps/doapp/standalone/scripts/ lucifer@192.168.0.103:/apps/doapp/standalone/scripts/
 
 rsync -rvzhu -p -o -g --delete --log-file=/apps/doapp/standalone/logs/rsync/$logfilename /apps/doapp/IN/ lucifer@192.168.0.103:/apps/doapp/IN/
 
